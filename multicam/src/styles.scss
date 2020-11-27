@@ -1,0 +1,196 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#secondary .vjs-control-bar {
+    display: none !important;
+}
+
+#secondary .theoplayer-container {
+    pointer-events: none !important;
+}
+
+.camera {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+td,
+th {
+    border: 1px solid #000;
+}
+
+#container-1 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#container-1>.theoplayer-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#secondary {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.multicam-off #secondary {
+    display: none;
+}
+
+.has-not-started #secondary .theoplayer-container,
+.has-not-started .camera {
+    display: none;
+}
+
+#secondary .theoplayer-container {
+    /*width: 300px;*/
+    height: 100px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.grid #secondary .theoplayer-container {
+    width: 100%;
+    margin: 0;
+    opacity: unset;
+}
+
+.vjs-control-bar {
+    z-index: 100001 !important;
+}
+
+#secondary .vjs-big-play-button {
+    display: none !important;
+}
+
+#sync-status-log {
+    position: absolute;
+    z-index: 1000000;
+    top: 5%;
+    right: 5%;
+    height: auto;
+    width: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.status-off #sync-status-log {
+    display: none;
+}
+
+.custom-info-icon {
+    cursor: pointer;
+}
+
+#secondary>div {
+    cursor: zoom-in;
+}
+
+.grid#container-1>.theoplayer-container .vjs-tech {
+    width: 50%;
+    height: 50%;
+}
+
+.grid#container-1 {
+    cursor: zoom-in;
+}
+
+.grid #secondary {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: unset;
+    -ms-transform: unset;
+    /*pointer-events: none;*/
+}
+
+.grid #secondary>div {
+    /*top: 0;*/
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    transform: unset;
+    -ms-transform: unset;
+    /*pointer-events: none;*/
+    margin: 0;
+    padding: 0;
+}
+
+.active .unfocus .vjs-tech {
+    /*filter: blur(2px);*/
+    filter: brightness(0.5);
+}
+
+.grid #secondary .theoplayer-container {
+    width: 100%;
+    height: 100%;
+}
+
+.grid #container-2 {
+    right: 0;
+    top: 0;
+}
+
+.grid #container-3 {
+    bottom: 0 !important;
+}
+
+.grid #container-4 {
+    bottom: 0 !important;
+    right: 0;
+}
+
+.grid .fa-window-restore,
+.multicam-off .fa-th-large {
+    cursor: not-allowed;
+    opacity: 0.2;
+}
+
+.no-grid #secondary .camera {
+    display: none;
+}
+
+.no-grid #secondary:hover .camera {
+    display: block;
+}
+
+.no-grid #secondary>div:hover .expand-icon {
+    display: block;
+}
+
+.grid .camera {
+    display: none;
+}
+
+.grid .focus .camera {
+    display: block;
+}
+
+.expand-icon {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    fill: white;
+    display: none;
+}
+
+.grid .focus .expand-icon {
+    display: block;
+}
